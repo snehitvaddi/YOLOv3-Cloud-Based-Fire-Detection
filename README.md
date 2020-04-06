@@ -23,3 +23,6 @@ I referenced this tutorial from an [YouTube Video](https://www.youtube.com/chann
 You can follow a step-by-step walkthrough of video and the code here: https://www.youtube.com/watch?v=10joRJt39Ns
 
 You can download the yolov3 pretrained weights by clicking [here](https://pjreddie.com/media/files/yolov3.weights) and yolov3-tiny [here](https://pjreddie.com/media/files/yolov3-tiny.weights)
+## Further Ideas
+I am trying to implement this model to detect fire from real time and send alerts if any mishap happens.
+Any Ideas/suggestions/contributions are highly appreciable.
