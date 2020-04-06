@@ -1,13 +1,14 @@
-# Building a YOLOv3 Object Detector with Darknet in the Cloud! (GPU ENABLED)
+## Building a YOLOv3 Object Detector with Darknet in the Cloud! (GPU ENABLED)
 This repo consists of code used for training and detecting Fire using custom YoloV3 model. I trained my custom detector on existing yolov3 weights trained to detect 80 classes.
 
+You can view the detailed implementation here in [Google Colab notebook](https://colab.research.google.com/drive/15hm35BAVig0Z3_6vy2z4Ewj5AIbuX4l9) (or) refer `YOLOv3_Fire.ipynb` 
 ## Sample outputs from Custom YOLOv3 model
-| #Input      | #Output      |
-|------------|-------------|
-| <img src="https://github.com/snehitvaddi/YOLOv3-Cloud-Custom-Object-Detection/blob/master/images/fire1.jpg" width="300"> | <img src="https://github.com/snehitvaddi/YOLOv3-Cloud-Custom-Object-Detection/blob/master/result-images/predictions%20(1).jpg" width="300"> |
-| <img src="https://github.com/snehitvaddi/YOLOv3-Cloud-Custom-Object-Detection/blob/master/images/fire3.jpg" width="300"> | <img src="https://github.com/snehitvaddi/YOLOv3-Cloud-Custom-Object-Detection/blob/master/result-images/predictions%20(2).jpg" width="300"> |
-| <img src="https://github.com/snehitvaddi/YOLOv3-Cloud-Custom-Object-Detection/blob/master/images/fire7.jpg" width="300"> | <img src="https://github.com/snehitvaddi/YOLOv3-Cloud-Custom-Object-Detection/blob/master/result-images/predictions%20(3).jpg" width="300"> |
-## Performance Chart
+  |   Input      |   Output      |
+  |------------|-------------|
+  | <img src="https://github.com/snehitvaddi/YOLOv3-Cloud-Custom-Object-Detection/blob/master/images/fire1.jpg" width="300"> | <img src="https://github.com/snehitvaddi/YOLOv3-Cloud-Custom-Object-Detection/blob/master/result-images/predictions%20(1).jpg" width="300"> |
+  | <img src="https://github.com/snehitvaddi/YOLOv3-Cloud-Custom-Object-Detection/blob/master/images/fire3.jpg" width="300"> | <img src="https://github.com/snehitvaddi/YOLOv3-Cloud-Custom-Object-Detection/blob/master/result-images/predictions%20(2).jpg" width="300"> |
+  | <img src="https://github.com/snehitvaddi/YOLOv3-Cloud-Custom-Object-Detection/blob/master/images/fire7.jpg" width="300"> | <img src="https://github.com/snehitvaddi/YOLOv3-Cloud-Custom-Object-Detection/blob/master/result-images/predictions%20(3).jpg" width="300"> |
+## Training Performance Chart
 Here is the chart to describe how my performed during entire training process. It shows average loss vs. iterations. For a model to be 'accurate' you would aim for a loss under 2.<br>
 <img src="https://github.com/snehitvaddi/YOLOv3-Cloud-Custom-Object-Detection/blob/master/result-images/chart.png" width="600" height="600"/>
 ****************************************************************************************************************************************
@@ -17,7 +18,6 @@ Files Required :
 * Custom .cfg file
 * obj.data and obj.names files
 * train.txt file (test.txt is optional here as well)
-You can view the detailed implementation here in [Google Colab notebook](https://colab.research.google.com/drive/15hm35BAVig0Z3_6vy2z4Ewj5AIbuX4l9) (or) refer `YOLOv3_Fire.ipynb` 
 
 I referenced this tutorial from an [YouTube Video](https://www.youtube.com/channel/UCrydcKaojc44XnuXrfhlV8Q) by TheAIGuy channel.
 You can follow a step-by-step walkthrough of video and the code here: https://www.youtube.com/watch?v=10joRJt39Ns
