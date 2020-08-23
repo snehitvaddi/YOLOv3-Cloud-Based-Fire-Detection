@@ -1,7 +1,7 @@
 ## Building a YOLOv3 Object Detector with Darknet in the Cloud! (GPU ENABLED)
 This repo consists of code used for training and detecting Fire using custom YoloV3 model. I trained my custom detector on existing yolov3 weights trained to detect 80 classes.
 
-You can view the detailed implementation in here [Google Colab notebook](https://colab.research.google.com/drive/15hm35BAVig0Z3_6vy2z4Ewj5AIbuX4l9) (or) refer `YOLOv3_Fire.ipynb` 
+You can view the detailed implementation in here [Google Colab notebook](https://colab.research.google.com/drive/15hm35BAVig0Z3_6vy2z4Ewj5AIbuX4l9) (or) refer `YOLOv3_Tutorial.ipynb` 
 ## Sample outputs from Custom YOLOv3 model
   |   Input      |   Output      |
   |------------|-------------|
