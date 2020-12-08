@@ -47,5 +47,5 @@ If you are a student like me, and unable to pay such amount, here is a jugad for
 `setInterval(ClickConnect,60000)`<br>
 ****************************************************************************************************************************************
 ## 🧠 Further Ideas
-* I am trying to implement this model to detect fire from real time video and sends alerts if any mishap happens.
+* Integrate the model with IOT and leverage Cloud services for real-time monitoring and alerting system.
 * Any Ideas/suggestions/contributions are highly appreciable.
