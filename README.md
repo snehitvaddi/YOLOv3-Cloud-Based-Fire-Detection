@@ -1,9 +1,13 @@
 ## Building a YOLOv3 Object Detector with Darknet in the Cloud! (GPU ENABLED)
-This repo consists of code used for training and detecting Fire using custom YoloV3 model. I trained my custom detector on existing yolov3 weights trained to detect 80 classes.
+A Project on Fire detection using YOLOv3 model. This repo consists of code used for training and detecting Fire using custom YoloV3 model. I trained my custom detector on existing yolov3 weights trained to detect 80 classes. <br>
 
-|  🧾 Colab Notebook  |   📂 Dataset    | 🔑 Trained Model |
-|------------|-------------|-----------|
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1O1tlwjbt4dUWBct2Jv0vHXPNe_fcMCa_/view?usp=sharing)<br> or<br> refer `YOLOv3_Tutorial.ipynb` | [Dataset with Labels](https://drive.google.com/file/d/1O1tlwjbt4dUWBct2Jv0vHXPNe_fcMCa_/view?usp=sharing) | [Download Model](https://drive.google.com/file/d/1-0mACyQvwGSpaxXS57Z1L6wdHutpuFRE/view?usp=sharing) |
+The Dataset is collected from google images using [Download All Images](https://chrome.google.com/webstore/detail/download-all-images/ifipmflagepipjokmbdecpmjbibjnakm) chrome extension. I labelled dataset using [Label Img](https://github.com/tzutalin/labelImg).<br>
+
+Some of the readily labelled datasets are available here @[Google's Open Image Dataset v5](https://storage.googleapis.com/openimages/web/index.html).
+
+|  🧾 Colab Notebook  |   📂 Dataset    | 🔑 Trained Model |  ✍ LabelImg |
+|------------|-------------|-----------|-----------|
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1O1tlwjbt4dUWBct2Jv0vHXPNe_fcMCa_/view?usp=sharing) | [Dataset with Labels](https://drive.google.com/file/d/1O1tlwjbt4dUWBct2Jv0vHXPNe_fcMCa_/view?usp=sharing) | [Download Model](https://drive.google.com/file/d/1-0mACyQvwGSpaxXS57Z1L6wdHutpuFRE/view?usp=sharing) | [Label Img ](https://github.com/tzutalin/labelImg)  |
 
 ### 🧬 Sample outputs from Custom YOLOv3 model
   |    Input   |   Output   |
