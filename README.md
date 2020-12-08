@@ -3,7 +3,7 @@ This repo consists of code used for training and detecting Fire using custom Yol
 
 You can view the detailed implementation in here [Google Colab notebook](https://colab.research.google.com/drive/15hm35BAVig0Z3_6vy2z4Ewj5AIbuX4l9) (or) refer `YOLOv3_Tutorial.ipynb` 
 
-You can download the labelled dataset from here- [Drive Link](https://drive.google.com/file/d/1O1tlwjbt4dUWBct2Jv0vHXPNe_fcMCa_/view?usp=sharing)
+### Download labelled dataset from here- [Drive Link](https://drive.google.com/file/d/1O1tlwjbt4dUWBct2Jv0vHXPNe_fcMCa_/view?usp=sharing)
 
 ### ⭐ Trained model: [Download Model](https://drive.google.com/file/d/1-0mACyQvwGSpaxXS57Z1L6wdHutpuFRE/view?usp=sharing)
 ### 🔐 Sample outputs from Custom YOLOv3 model
