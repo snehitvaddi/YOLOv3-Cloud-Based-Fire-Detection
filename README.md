@@ -19,7 +19,7 @@ Some of the readily labelled datasets are available here @[Google's Open Image D
 
 ## 📈 Training Performance Chart
 Here is the chart to describe how my performed during entire training process. It shows average loss vs. iterations. For a model to be 'accurate' you would aim for a loss under 2.<br>
-<img src="https://github.com/snehitvaddi/YOLOv3-Cloud-Custom-Object-Detection/blob/master/result-images/chart.png" width="600" height="600"/>
+<img src="https://github.com/snehitvaddi/YOLOv3-Cloud-Custom-Object-Detection/blob/master/result-images/chart.png" width="450" height="450"/>
 ****************************************************************************************************************************************
 ### 📂 Files Required :
 * Darknet repository
