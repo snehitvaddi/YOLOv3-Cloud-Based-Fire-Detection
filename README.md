@@ -1,4 +1,4 @@
-## Building a YOLOv3 Object Detector with Darknet in the Cloud! (GPU ENABLED)
+## YoloV3 Fire Detection model! (GPU ENABLED)
 A Project on Fire detection using YOLOv3 model. This repo consists of code used for training and detecting Fire using custom YoloV3 model. I trained my custom detector on existing yolov3 weights trained to detect 80 classes. <br>
 
 The Dataset is collected from google images using [Download All Images](https://chrome.google.com/webstore/detail/download-all-images/ifipmflagepipjokmbdecpmjbibjnakm) chrome extension. I labelled dataset using [Label Img](https://github.com/tzutalin/labelImg).<br>
