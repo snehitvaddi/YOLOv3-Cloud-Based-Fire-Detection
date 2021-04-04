@@ -48,4 +48,5 @@ If you are a student like me, and unable to pay such amount, here is a jugad for
 ****************************************************************************************************************************************
 ## 🧠 Further Ideas
 * Integrate the model with IOT and leverage Cloud services for real-time monitoring and alerting system.
-* Any Ideas/suggestions/contributions are highly appreciable.
+
+#### Any Ideas/suggestions/contributions are highly appreciable.
