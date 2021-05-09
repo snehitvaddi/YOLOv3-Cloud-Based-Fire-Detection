@@ -9,6 +9,14 @@ Some of the readily labelled datasets are available here @[Google's Open Image D
 |------------|-------------|-----------|-----------|
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1O1tlwjbt4dUWBct2Jv0vHXPNe_fcMCa_/view?usp=sharing) | [Dataset with Labels](https://drive.google.com/file/d/1O1tlwjbt4dUWBct2Jv0vHXPNe_fcMCa_/view?usp=sharing) | [Download Weights](https://drive.google.com/file/d/1-0mACyQvwGSpaxXS57Z1L6wdHutpuFRE/view?usp=sharing) | [Label Img ](https://github.com/tzutalin/labelImg)  |
 
+### 📥 Web-Interface using Streamlit 
+<center><img src="https://github.com/snehitvaddi/YOLOv3-Cloud-Based-Fire-Detection/blob/master/UI.PNG" width="500" /></center><br>
+
+###### Streamlit library makes it easy to create and share beautiful, custom web apps for machine learning and data science applications.
+ * For executing Streamlit application, install streamlit using `pip install streamlit --user`.
+ * Open Command Prompt, and execute `streamlit run UI.py`.
+ * A Streamlit server gets started and opens up web UI in the default browser.
+
 ### 🧬 Sample outputs from Custom YOLOv3 model
   |    Input   |   Output   |
   |------------|-------------|
@@ -49,4 +57,9 @@ If you are a student like me, and unable to pay such amount, here is a jugad for
 ## 🧠 Further Ideas
 * Integrate the model with IOT and leverage Cloud services for real-time monitoring and alerting system.
 
-#### Any Ideas/suggestions/contributions are highly appreciable.
+## References: 
+**Streamlit Yolo Deployment** - https://srishti.hashnode.dev/object-detection-app-using-yolov3-opencv-and-streamlit-1<br>
+**YoloV3 Custom Model taining** - https://www.youtube.com/channel/UCrydcKaojc44XnuXrfhlV8Q<br>
+
+#### 💡 Need Help.
+I'm facing bugs with uploading images through Streamlit and Displaying them using OpenCV. Any kind of suggestions will be appriciable. 
