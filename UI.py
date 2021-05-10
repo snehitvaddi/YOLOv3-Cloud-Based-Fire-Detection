@@ -4,6 +4,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image
 import time
+import getpass
+import smtplib
+import glob
+from datetime import datetime
+now = datetime.now().time()
 
 class YOLO:
 
@@ -58,11 +63,51 @@ class YOLO:
                 results.append((id, self.labels[id], confidence, x, y, w, h))
 
         return iw, ih, inference_time, results
+class Foo(object):
+    counter = 0
+    def __call__(self):
+        Foo.counter += 1
+        return(Foo.counter)
+    
+def email_alert():
+    
+    server = smtplib.SMTP('smtp.gmail.com',587)
+    server.ehlo()
+    
+    server.starttls()
+    username = 'v.snehith999@gmail.com'
+    receiver = username
+    passwd = getpass.getpass()
+    server.login(username,passwd)
 
+
+    from email.mime.multipart import MIMEMultipart
+    from email.mime.text import MIMEText
+    from email.mime.application import MIMEApplication
+    from datetime import datetime
+    
+    msg= MIMEMultipart()
+    msg['from'] = username
+    msg['to'] = receiver
+    msg['subject'] = "Images"
+    text = "Found Fire, have a look at sample images"
+    msg.attach(MIMEText(text))
+    F = glob.glob("detected-images/*")
+    
+    count = 0
+    for i in F:
+        with open(i,'rb') as f:
+                part = MIMEApplication(f.read())
+                part.add_header('content-Disposition','attachment',filename='{}.jpg'.format(count+1))
+                msg.attach(part)
+    server.sendmail(username,receiver,msg.as_string())
+
+    
 
 def detect_objects(our_image):
     st.set_option('deprecation.showPyplotGlobalUse', False)
 
+    flag = 0
     col1, col2 = st.beta_columns(2)
     
     try:
@@ -76,18 +121,17 @@ def detect_objects(our_image):
     plt.imshow(cv2.cvtColor(our_image, cv2.COLOR_BGR2RGB))
     col1.pyplot(use_column_width=True)
 
-##    new_img = np.array(our_image.convert('RGB'), np.float32)
-##    our_img = cv2.cvtColor(new_img,1)
-##    our_image = cv2.imread(our_image)
     width, height, inference_time, results = yolo.inference(our_image)
     if(results==[]):
         cv2.putText(our_image, 'No Fire', (0, 160), cv2.FONT_HERSHEY_SIMPLEX,1, (0, 255, 255), 2)
+        st.write("Yolo Model is struggling to find FIRE in this image.")
     else:
+        flag=1
         for detection in results:
             id, name, confidence, x, y, w, h = detection
             color = (0, 255, 255)
             cv2.rectangle(our_image, (x, y), (x + w, y + h), color, 2)
-
+            cv2.imwrite('detected-images/{}.jpg'.format(now),our_image)
 
     st.text("")
     col2.subheader("Object-Detected Image")
@@ -96,10 +140,19 @@ def detect_objects(our_image):
     plt.imshow(cv2.cvtColor(our_image, cv2.COLOR_BGR2RGB))
     col2.pyplot(use_column_width=True)
 
+    if(flag==1):
+        with st.spinner('Enter Password in terminal to alert Admin...'):
+            try:
+                email_alert()
+                st.success('Alerting Email Sent!')
+                st.balloons()
+            except:
+                st.warning('Something went wrong in emailing.\
+                           Allow Less Secure Apps [here](https://myaccount.google.com/lesssecureapps?pli=1&rapt=AEjHL4NXGrcebt5B8To-QcTqB2d55-ZxnZyOHZfeX3URdTb-0Wy4Xw-aUcEpm0ynhZechyIjhquO7BfA04Yp_WBSNh9fh5kkqQ)')
+
 
 def object_main():
-    """OBJECT DETECTION APP"""
-
+    
     st.title("Object Detection")
     
     choice = st.radio("", ("Show Demo", "Browse an Image"))
