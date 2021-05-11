@@ -110,11 +110,9 @@ def detect_objects(our_image):
     flag = 0
     col1, col2 = st.beta_columns(2)
     
-    try:
-        yolo = YOLO("yolov3/yolov3_custom.cfg", "yolov3/yolov3_custom1_1000.weights", ["Fire"])
-    except:
-        st.success("Model Loaded!!")
-        
+    yolo = YOLO("yolov3/yolov3_custom.cfg", "yolov3/yolov3_custom1_1000.weights", ["Fire"]) 
+    st.success("Model Loaded!!")
+            
     col1.subheader("Original Image")
     st.text("")
     plt.figure(figsize = (15,15))
