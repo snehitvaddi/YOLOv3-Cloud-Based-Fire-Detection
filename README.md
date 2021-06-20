@@ -2,10 +2,8 @@
 A Project on Fire detection using YOLOv3 model. This repo consists of code used for training and detecting Fire using custom YoloV3 model. I trained my custom detector on existing yolov3 weights trained to detect 80 classes. <br>
 The Dataset is collected from google images using [Download All Images](https://chrome.google.com/webstore/detail/download-all-images/ifipmflagepipjokmbdecpmjbibjnakm) chrome extension. Tool for Dataset labelling [Label Img](https://github.com/tzutalin/labelImg).<br>
 Find some readily labelled datasets are available here @[Google's Open Image Dataset v5](https://storage.googleapis.com/openimages/web/index.html).
-
-### Note:
-**I have made `Fire-Implementation.ipynb` private to avoid misuse, contact me @v.snehith999@gmail.com for complete directory ✌**
-
+#### Note:
+**I have made `Fire-Implementation.ipynb` private to avoid misuse, contact me @v.snehith999@gmail.com for complete directory ✌**<br>
 |  🧾 Colab Notebook  |   📂 Dataset with Labels   | 🔑 Trained Model Weights |  ✍ LabelImg |
 |------------|-------------|-----------|-----------|
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1O1tlwjbt4dUWBct2Jv0vHXPNe_fcMCa_/view?usp=sharing) | [Dataset with Labels](https://drive.google.com/file/d/1O1tlwjbt4dUWBct2Jv0vHXPNe_fcMCa_/view?usp=sharing) | [Download Weights](https://drive.google.com/file/d/1-0mACyQvwGSpaxXS57Z1L6wdHutpuFRE/view?usp=sharing) | [Label Img ](https://github.com/tzutalin/labelImg)  |
