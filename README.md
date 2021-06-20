@@ -1,4 +1,4 @@
-## YoloV3 Fire Detection model! (GPU ENABLED)
+## YoloV3 Fire Detection model
 A Project on Fire detection using YOLOv3 model. This repo consists of code used for training and detecting Fire using custom YoloV3 model. I trained my custom detector on existing yolov3 weights trained to detect 80 classes. <br>
 The Dataset is collected from google images using [Download All Images](https://chrome.google.com/webstore/detail/download-all-images/ifipmflagepipjokmbdecpmjbibjnakm) chrome extension. Tool for Dataset labelling [Label Img](https://github.com/tzutalin/labelImg).<br>
 Find some readily labelled datasets are available here @[Google's Open Image Dataset v5](https://storage.googleapis.com/openimages/web/index.html).
